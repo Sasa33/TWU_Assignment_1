@@ -36,20 +36,7 @@ public class Diamond {
     }
 
     private void printDiamond() {
-        if(this.name.isEmpty()) {
-            printTriangle();
-        } else {
-            for(int i = 0; i < this.num - 1; i++) {
-                for(int j = 1; j < this.num - i; j++) {
-                    System.out.print(' ');
-                }
-                for(int j = 1; j <= 2 * i + 1; j++) {
-                    System.out.print('*');
-                }
-                System.out.print('\n');
-            }
-            System.out.println(this.name);
-        }
+        printTriangle();
 
         for(int i = this.num - 1; i > 0; i--) {
             for(int j = 0; j < this.num - i; j++) {
@@ -63,7 +50,7 @@ public class Diamond {
     }
 
     private void printTriangle() {
-        for(int i = 0; i < this.num; i++) {
+        for(int i = 0; i < this.num - 1; i++) {
             for(int j = 1; j < this.num - i; j++) {
                 System.out.print(' ');
             }
@@ -72,5 +59,14 @@ public class Diamond {
             }
             System.out.print('\n');
         }
+
+        if(this.name.isEmpty()) {
+            for(int j = 1; j <= 2 * this.num - 1; j++) {
+                System.out.print('*');
+            }
+        } else {
+            System.out.print(this.name);
+        }
+        System.out.print('\n');
     }
 }
