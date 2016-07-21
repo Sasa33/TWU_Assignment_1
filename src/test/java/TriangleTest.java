@@ -32,18 +32,43 @@ public class TriangleTest {
 
         triangle.print();
 
-        String expectedOutput  = "*";
+        String expectedOutput = "*";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
 
     @Test
     public void should_print_eight_stars_when_input_number_is_eight() {
-        triangle = new Triangle(8);
+        triangle = new Triangle(8, "horizontal");
 
         triangle.print();
 
-        String expectedOutput  = "********";
+        String expectedOutput = "********";
+
+        assertEquals(outContent.toString(), expectedOutput);
+    }
+
+    @Test
+    public void should_print_stars_horizontally_when_input_argument_specify_horizontal() {
+        triangle = new Triangle(3, "horizontal");
+
+        triangle.print();
+
+        String expectedOutput = "***";
+
+        assertEquals(outContent.toString(), expectedOutput);
+    }
+
+
+    @Test
+    public void should_print_stars_vertically_when_input_argument_specify_vertical() {
+        triangle = new Triangle(3, "vertical");
+
+        triangle.print();
+
+        String expectedOutput = "*\n" +
+                                "*\n" +
+                                "*\n";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
