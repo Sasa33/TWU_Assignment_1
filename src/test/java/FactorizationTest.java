@@ -46,4 +46,15 @@ public class FactorizationTest {
 
         assertEquals(outContent.toString(), expectedOutput);
     }
+
+    @Test
+    public void should_print_factors_increasingly_when_input_number_is_78() {
+        factorization = new Factorization(78);
+
+        factorization.generate();
+
+        String expectedOutput = "2,3,13";
+
+        assertEquals(outContent.toString(), expectedOutput);
+    }
 }
