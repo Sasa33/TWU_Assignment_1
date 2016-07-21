@@ -35,4 +35,15 @@ public class FactorizationTest {
 
         assertEquals(outContent.toString(), expectedOutput);
     }
+
+    @Test
+    public void should_print_factors_increasingly_when_input_number_is_30() {
+        factorization = new Factorization(30);
+
+        factorization.generate();
+
+        String expectedOutput = "2,3,5";
+
+        assertEquals(outContent.toString(), expectedOutput);
+    }
 }
