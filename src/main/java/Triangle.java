@@ -6,6 +6,11 @@ public class Triangle {
     }
 
     public void print() {
-        System.out.print('*');
+        int number = this.num;
+
+        while(number>0) {
+            System.out.print('*');
+            number--;
+        }
     }
 }

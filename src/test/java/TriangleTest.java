@@ -36,4 +36,15 @@ public class TriangleTest {
 
         assertEquals(outContent.toString(), expectedOutput);
     }
+
+    @Test
+    public void should_print_eight_stars_when_input_number_is_eight() {
+        triangle = new Triangle(8);
+
+        triangle.print();
+
+        String expectedOutput  = "********";
+
+        assertEquals(outContent.toString(), expectedOutput);
+    }
 }
