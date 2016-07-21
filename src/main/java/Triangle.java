@@ -14,9 +14,7 @@ public class Triangle {
     }
 
     public void print() {
-        int number = this.num;
-
-        for(int i = 1; i <= number; i++) {
+        for(int i = 1; i <= this.num; i++) {
             switch (this.style) {
                 case "horizontal":
                     System.out.print('*');
