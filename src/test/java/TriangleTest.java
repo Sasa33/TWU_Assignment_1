@@ -72,4 +72,17 @@ public class TriangleTest {
 
         assertEquals(outContent.toString(), expectedOutput);
     }
+
+    @Test
+    public void should_print_right_triangle_stars_when_input_argument_specify_triangle() {
+        triangle = new Triangle(3, "triangle");
+
+        triangle.print();
+
+        String expectedOutput = "*\n" +
+                                "**\n" +
+                                "***\n";
+
+        assertEquals(outContent.toString(), expectedOutput);
+    }
 }
