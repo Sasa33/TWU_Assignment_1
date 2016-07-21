@@ -37,4 +37,19 @@ public class DiamondTest {
 
         assertEquals(outContent.toString(), expectedOutput);
     }
+
+    @Test
+    public void should_print_a_diamond_when_input_specify_diamond() {
+        diamond = new Diamond(3, "diamond");
+
+        diamond.print();
+
+        String expectedOutput = "  *\n" +
+                                " ***\n" +
+                                "*****\n" +
+                                " ***\n" +
+                                "  *\n";
+
+        assertEquals(outContent.toString(), expectedOutput);
+    }
 }
