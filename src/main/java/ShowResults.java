@@ -23,23 +23,32 @@ public class ShowResults {
 
         diamond = new Diamond(3);
         diamond.print();
+        System.out.println();
 
         diamond = new Diamond(3, "diamond");
         diamond.print();
+        System.out.println();
 
         diamond = new Diamond(3, "diamond", "sasa");
         diamond.print();
+        System.out.println();
 
 
         fizzBuzz = new FizzBuzz(30);
         fizzBuzz.print();
-
+        System.out.println();
 
 
         factorization = new Factorization(1);
         factorization.generate();
+        System.out.println();
 
         factorization = new Factorization(30);
         factorization.generate();
+        System.out.println();
+
+        factorization = new Factorization(200);
+        factorization.generate();
+        System.out.println();
     }
 }
