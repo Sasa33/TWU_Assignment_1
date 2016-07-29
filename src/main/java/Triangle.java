@@ -32,5 +32,6 @@ public class Triangle {
                     System.out.print('*');
             }
         }
+        System.out.print('\n');
     }
 }

@@ -32,7 +32,7 @@ public class TriangleTest {
 
         triangle.print();
 
-        String expectedOutput = "*";
+        String expectedOutput = "*\n";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
@@ -43,7 +43,7 @@ public class TriangleTest {
 
         triangle.print();
 
-        String expectedOutput = "********";
+        String expectedOutput = "********\n";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
@@ -54,7 +54,7 @@ public class TriangleTest {
 
         triangle.print();
 
-        String expectedOutput = "***";
+        String expectedOutput = "***\n";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
@@ -68,7 +68,7 @@ public class TriangleTest {
 
         String expectedOutput = "*\n" +
                                 "*\n" +
-                                "*\n";
+                                "*\n\n";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
@@ -81,7 +81,7 @@ public class TriangleTest {
 
         String expectedOutput = "*\n" +
                                 "**\n" +
-                                "***\n";
+                                "***\n\n";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
