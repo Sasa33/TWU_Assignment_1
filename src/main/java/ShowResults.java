@@ -14,10 +14,10 @@ public class ShowResults {
         triangle.print();
         System.out.println();
 
-        triangle = new Triangle(3, "vertical");
+        triangle = new Triangle(3, TriangleStyle.vertical);
         triangle.print();
 
-        triangle = new Triangle(3, "triangle");
+        triangle = new Triangle(3, TriangleStyle.triangle);
         triangle.print();
 
 

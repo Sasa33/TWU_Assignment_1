@@ -1,28 +1,29 @@
 import java.awt.*;
 
+
 public class Triangle {
     private int num;
-    private String style = "horizontal";
+    private TriangleStyle triangleStyle = TriangleStyle.horizontal;
 
     public Triangle(int n) {
         this.num = n;
     }
 
-    public Triangle(int n, String s) {
+    public Triangle(int n, TriangleStyle triangleStyle) {
         this.num = n;
-        this.style = s;
+        this.triangleStyle = triangleStyle;
     }
 
     public void print() {
         for(int i = 1; i <= this.num; i++) {
-            switch (this.style) {
-                case "horizontal":
+            switch (this.triangleStyle) {
+                case horizontal:
                     System.out.print('*');
                     break;
-                case "vertical":
+                case vertical:
                     System.out.println('*');
                     break;
-                case "triangle":
+                case triangle:
                     for (int j = 1; j <= i; j++) {
                         System.out.print('*');
                     }
