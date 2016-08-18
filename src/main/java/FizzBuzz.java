@@ -7,17 +7,18 @@ public class FizzBuzz {
 
     public void print() {
         for(int i = 1; i <= this.number; i++) {
-            if(i % 3 == 0) {
-                if(i % 5 == 0) {
-                    System.out.println("FizzBuzz");
-                } else {
-                    System.out.println("Fizz");
-                }
-            } else if(i % 5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
+            boolean canDividedBy3Exactly = i % 3 == 0;
+            boolean canDividedBy5Exactly = i % 5 == 0;
+            if(canDividedBy3Exactly) {
+                System.out.print("Fizz");
             }
+            if(canDividedBy5Exactly) {
+                System.out.print("Buzz");
+            }
+            if(!canDividedBy3Exactly && !canDividedBy5Exactly) {
+                System.out.print(i);
+            }
+            System.out.println();
         }
     }
 }
