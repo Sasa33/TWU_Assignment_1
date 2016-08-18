@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Factorization {
     private int number;
@@ -9,7 +8,7 @@ public class Factorization {
         this.number = i;
     }
 
-    public void generate() {
+    private void generatePrimeNumbers() {
         primeNumbers = new ArrayList<>();
 
         int n = this.number;
@@ -23,18 +22,18 @@ public class Factorization {
         if (n > 1) {
             primeNumbers.add(n);
         }
-
-        this.print(primeNumbers);
     }
 
-    private void print(ArrayList<Integer> numbers) {
-        int length = numbers.size();
+    public void print() {
+        generatePrimeNumbers();
+
+        int length = primeNumbers.size();
         for (int i = 0; i < length; i++) {
             if (i < length - 1) {
-                System.out.print(numbers.get(i));
+                System.out.print(primeNumbers.get(i));
                 System.out.print(",");
             } else {
-                System.out.print(numbers.get(i));
+                System.out.print(primeNumbers.get(i));
             }
         }
     }

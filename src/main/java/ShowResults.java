@@ -40,15 +40,15 @@ public class ShowResults {
 
 
         factorization = new Factorization(1);
-        factorization.generate();
+        factorization.print();
         System.out.println();
 
         factorization = new Factorization(30);
-        factorization.generate();
+        factorization.print();
         System.out.println();
 
         factorization = new Factorization(200);
-        factorization.generate();
+        factorization.print();
         System.out.println();
     }
 }

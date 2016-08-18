@@ -29,7 +29,7 @@ public class FactorizationTest {
     public void should_print_empty_list_when_input_number_is_1() {
         factorization = new Factorization(1);
 
-        factorization.generate();
+        factorization.print();
 
         String expectedOutput = "";
 
@@ -40,7 +40,7 @@ public class FactorizationTest {
     public void should_print_factors_increasingly_when_input_number_is_30() {
         factorization = new Factorization(30);
 
-        factorization.generate();
+        factorization.print();
 
         String expectedOutput = "2,3,5";
 
@@ -51,7 +51,7 @@ public class FactorizationTest {
     public void should_print_factors_increasingly_when_input_number_is_78() {
         factorization = new Factorization(78);
 
-        factorization.generate();
+        factorization.print();
 
         String expectedOutput = "2,3,13";
 
