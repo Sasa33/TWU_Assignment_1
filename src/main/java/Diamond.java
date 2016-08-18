@@ -24,20 +24,24 @@ public class Diamond {
     public void print() {
         switch (this.style) {
             case TRIANGLE:
-                printTriangle();
+                printTheUpperTriangle();
                 break;
             case DIAMOND:
                 printDiamond();
                 break;
             default:
-                printTriangle();
+                printTheUpperTriangle();
                 break;
         }
     }
 
     private void printDiamond() {
-        printTriangle();
+        printTheUpperTriangle();
 
+        printTheLowerTriangle();
+    }
+
+    private void printTheLowerTriangle() {
         for(int i = this.num - 1; i > 0; i--) {
             for(int j = 0; j < this.num - i; j++) {
                 System.out.print(' ');
@@ -49,7 +53,7 @@ public class Diamond {
         }
     }
 
-    private void printTriangle() {
+    private void printTheUpperTriangle() {
         for(int i = 0; i < this.num - 1; i++) {
             for(int j = 1; j < this.num - i; j++) {
                 System.out.print(' ');
