@@ -64,6 +64,10 @@ public class Diamond {
             System.out.print('\n');
         }
 
+        printTheMiddleRowOfDiamond();
+    }
+
+    private void printTheMiddleRowOfDiamond() {
         if(this.name.isEmpty()) {
             for(int j = 1; j <= 2 * this.num - 1; j++) {
                 System.out.print('*');
