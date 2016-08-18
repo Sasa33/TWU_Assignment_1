@@ -39,7 +39,7 @@ public class TriangleTest {
 
     @Test
     public void should_print_eight_stars_when_input_number_is_eight() {
-        triangle = new Triangle(8, TriangleStyle.horizontal);
+        triangle = new Triangle(8, TriangleStyle.HORIZONTAL);
 
         triangle.print();
 
@@ -50,7 +50,7 @@ public class TriangleTest {
 
     @Test
     public void should_print_stars_horizontally_when_input_argument_specify_horizontal() {
-        triangle = new Triangle(3, TriangleStyle.horizontal);
+        triangle = new Triangle(3, TriangleStyle.HORIZONTAL);
 
         triangle.print();
 
@@ -62,7 +62,7 @@ public class TriangleTest {
 
     @Test
     public void should_print_stars_vertically_when_input_argument_specify_vertical() {
-        triangle = new Triangle(3, TriangleStyle.vertical);
+        triangle = new Triangle(3, TriangleStyle.VERTICAL);
 
         triangle.print();
 
@@ -75,7 +75,7 @@ public class TriangleTest {
 
     @Test
     public void should_print_right_triangle_stars_when_input_argument_specify_triangle() {
-        triangle = new Triangle(3, TriangleStyle.triangle);
+        triangle = new Triangle(3, TriangleStyle.TRIANGLE);
 
         triangle.print();
 

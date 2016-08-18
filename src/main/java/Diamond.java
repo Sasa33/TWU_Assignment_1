@@ -1,32 +1,32 @@
 public class Diamond {
     private int num;
-    private String style;
+    private DiamondStyle style;
     private String name;
 
     public Diamond(int i) {
         this.num = i;
-        this.style = "triangle";
+        this.style = DiamondStyle.TRIANGLE;
         this.name = "";
     }
 
-    public Diamond(int i, String s) {
+    public Diamond(int i, DiamondStyle diamondStyle) {
         this.num = i;
-        this.style = s;
+        this.style = diamondStyle;
         this.name = "";
     }
 
-    public Diamond(int i, String s, String name) {
+    public Diamond(int i, DiamondStyle diamondStyle, String name) {
         this.num = i;
-        this.style = s;
+        this.style = diamondStyle;
         this.name = name;
     }
 
     public void print() {
         switch (this.style) {
-            case "triangle":
+            case TRIANGLE:
                 printTriangle();
                 break;
-            case "diamond":
+            case DIAMOND:
                 printDiamond();
                 break;
             default:

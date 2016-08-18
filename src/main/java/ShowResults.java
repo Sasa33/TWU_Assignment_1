@@ -14,10 +14,10 @@ public class ShowResults {
         triangle.print();
         System.out.println();
 
-        triangle = new Triangle(3, TriangleStyle.vertical);
+        triangle = new Triangle(3, TriangleStyle.VERTICAL);
         triangle.print();
 
-        triangle = new Triangle(3, TriangleStyle.triangle);
+        triangle = new Triangle(3, TriangleStyle.TRIANGLE);
         triangle.print();
 
 
@@ -25,11 +25,11 @@ public class ShowResults {
         diamond.print();
         System.out.println();
 
-        diamond = new Diamond(3, "diamond");
+        diamond = new Diamond(3, DiamondStyle.DIAMOND);
         diamond.print();
         System.out.println();
 
-        diamond = new Diamond(3, "diamond", "sasa");
+        diamond = new Diamond(3, DiamondStyle.DIAMOND, "sasa");
         diamond.print();
         System.out.println();
 

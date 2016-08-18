@@ -1,3 +1,3 @@
 public enum TriangleStyle {
-    horizontal,vertical, triangle
+    HORIZONTAL, VERTICAL, TRIANGLE
 }

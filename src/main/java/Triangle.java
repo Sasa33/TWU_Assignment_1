@@ -1,9 +1,6 @@
-import java.awt.*;
-
-
 public class Triangle {
     private int num;
-    private TriangleStyle triangleStyle = TriangleStyle.horizontal;
+    private TriangleStyle triangleStyle = TriangleStyle.HORIZONTAL;
 
     public Triangle(int n) {
         this.num = n;
@@ -17,13 +14,13 @@ public class Triangle {
     public void print() {
         for(int i = 1; i <= this.num; i++) {
             switch (this.triangleStyle) {
-                case horizontal:
+                case HORIZONTAL:
                     System.out.print('*');
                     break;
-                case vertical:
+                case VERTICAL:
                     System.out.println('*');
                     break;
-                case triangle:
+                case TRIANGLE:
                     for (int j = 1; j <= i; j++) {
                         System.out.print('*');
                     }

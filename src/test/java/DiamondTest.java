@@ -40,7 +40,7 @@ public class DiamondTest {
 
     @Test
     public void should_print_a_diamond_when_input_specify_diamond() {
-        diamond = new Diamond(3, "diamond");
+        diamond = new Diamond(3, DiamondStyle.DIAMOND);
 
         diamond.print();
 
@@ -55,7 +55,7 @@ public class DiamondTest {
 
     @Test
     public void should_print_a_diamond_with_name_when_input_specify_diamond_and_name() {
-        diamond = new Diamond(3, "diamond", "sasa");
+        diamond = new Diamond(3, DiamondStyle.DIAMOND, "sasa");
 
         diamond.print();
 
