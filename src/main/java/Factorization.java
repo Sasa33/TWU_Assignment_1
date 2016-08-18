@@ -13,7 +13,9 @@ public class Factorization {
 
         int n = this.number;
 
-        for (int i = 2; i <= n / i; i++) {
+        int firstPrimeNumber = 2;
+
+        for (int i = firstPrimeNumber; i <= n / i; i++) {
             while (n % i == 0) {
                 primeNumbers.add(i);
                 n /= i;

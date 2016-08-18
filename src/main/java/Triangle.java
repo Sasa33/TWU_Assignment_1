@@ -12,10 +12,12 @@ public class Triangle {
     }
 
     public void print() {
+        boolean needANewLine = false;
         for(int i = 1; i <= this.num; i++) {
             switch (this.triangleStyle) {
                 case HORIZONTAL:
                     System.out.print('*');
+                    needANewLine = true;
                     break;
                 case VERTICAL:
                     System.out.println('*');
@@ -28,8 +30,11 @@ public class Triangle {
                     break;
                 default:
                     System.out.print('*');
+                    needANewLine = true;
             }
         }
-        System.out.print('\n');
+        if (needANewLine) {
+            System.out.print('\n');
+        }
     }
 }

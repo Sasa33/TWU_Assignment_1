@@ -68,7 +68,7 @@ public class TriangleTest {
 
         String expectedOutput = "*\n" +
                                 "*\n" +
-                                "*\n\n";
+                                "*\n";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
@@ -81,7 +81,7 @@ public class TriangleTest {
 
         String expectedOutput = "*\n" +
                                 "**\n" +
-                                "***\n\n";
+                                "***\n";
 
         assertEquals(outContent.toString(), expectedOutput);
     }
