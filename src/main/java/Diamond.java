@@ -24,19 +24,27 @@ public class Diamond {
     public void print() {
         switch (this.style) {
             case TRIANGLE:
-                printTheUpperTriangle();
+                printTriangle();
                 break;
             case DIAMOND:
                 printDiamond();
                 break;
             default:
-                printTheUpperTriangle();
+                printTriangle();
                 break;
         }
     }
 
+    private void printTriangle() {
+        printTheUpperTriangle();
+
+        printTheMiddleRowOfDiamond();
+    }
+
     private void printDiamond() {
         printTheUpperTriangle();
+
+        printTheMiddleRowOfDiamond();
 
         printTheLowerTriangle();
     }
@@ -63,8 +71,6 @@ public class Diamond {
             }
             System.out.print('\n');
         }
-
-        printTheMiddleRowOfDiamond();
     }
 
     private void printTheMiddleRowOfDiamond() {
