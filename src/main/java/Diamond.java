@@ -50,11 +50,11 @@ public class Diamond {
     }
 
     private void printTheLowerTriangle() {
-        for(int i = this.sideLength - 1; i > 0; i--) {
-            for(int j = 0; j < this.sideLength - i; j++) {
+        for(int i = this.sideLength - 2; i >= 0; i--) {
+            for(int j = 1; j < this.sideLength - i; j++) {
                 System.out.print(' ');
             }
-            for(int j = 1; j <= 2 * i - 1; j++) {
+            for(int j = 1; j <= 2 * i + 1; j++) {
                 System.out.print('*');
             }
             System.out.print('\n');
